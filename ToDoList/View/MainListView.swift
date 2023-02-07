@@ -16,7 +16,11 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.toDoList) { toDo in
-                ToDoCell(toDo: toDo)
+                NavigationLink {
+                    DetailView(toDo: toDo)
+                } label: {
+                    ToDoCell(toDo: toDo)
+                }
             }
             .navigationTitle("ToDoList")
             .listStyle(.plain)
@@ -29,6 +33,7 @@ struct MainListView: View {
             }
             .sheet(isPresented: $showComposer) {
                 ComposeView()
+                    
             }
                 
             

@@ -17,6 +17,7 @@
 		FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA512991E8BE0038423F /* ToDoStore.swift */; };
 		FD6CBA552992568C0038423F /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA542992568C0038423F /* ToDoCell.swift */; };
 		FD6CBA57299257430038423F /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA56299257430038423F /* ComposeView.swift */; };
+		FD6CBA5929925A9E0038423F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA5829925A9E0038423F /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FD6CBA512991E8BE0038423F /* ToDoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
 		FD6CBA542992568C0038423F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		FD6CBA56299257430038423F /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		FD6CBA5829925A9E0038423F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				FD6CBA4D2991E7880038423F /* MainListView.swift */,
 				FD6CBA542992568C0038423F /* ToDoCell.swift */,
 				FD6CBA56299257430038423F /* ComposeView.swift */,
+				FD6CBA5829925A9E0038423F /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6CBA422991E7280038423F /* Persistence.swift in Sources */,
+				FD6CBA5929925A9E0038423F /* DetailView.swift in Sources */,
 				FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */,
 				FD6CBA552992568C0038423F /* ToDoCell.swift in Sources */,
 				FD6CBA502991E7F20038423F /* ToDo.swift in Sources */,
