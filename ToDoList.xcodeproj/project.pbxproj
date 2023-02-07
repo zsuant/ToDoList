@@ -13,6 +13,8 @@
 		FD6CBA422991E7280038423F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA412991E7280038423F /* Persistence.swift */; };
 		FD6CBA452991E7280038423F /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA432991E7280038423F /* ToDoList.xcdatamodeld */; };
 		FD6CBA4E2991E7880038423F /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA4D2991E7880038423F /* MainListView.swift */; };
+		FD6CBA502991E7F20038423F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA4F2991E7F20038423F /* ToDo.swift */; };
+		FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA512991E8BE0038423F /* ToDoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FD6CBA412991E7280038423F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FD6CBA442991E7280038423F /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		FD6CBA4D2991E7880038423F /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		FD6CBA4F2991E7F20038423F /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		FD6CBA512991E8BE0038423F /* ToDoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		FD6CBA4B2991E7600038423F /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				FD6CBA4F2991E7F20038423F /* ToDo.swift */,
+				FD6CBA512991E8BE0038423F /* ToDoStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -160,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6CBA422991E7280038423F /* Persistence.swift in Sources */,
+				FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */,
+				FD6CBA502991E7F20038423F /* ToDo.swift in Sources */,
 				FD6CBA4E2991E7880038423F /* MainListView.swift in Sources */,
 				FD6CBA392991E7260038423F /* ToDoListApp.swift in Sources */,
 				FD6CBA452991E7280038423F /* ToDoList.xcdatamodeld in Sources */,
