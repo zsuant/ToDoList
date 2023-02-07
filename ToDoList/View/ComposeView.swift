@@ -10,6 +10,8 @@ import SwiftUI
 struct ComposeView: View {
     @EnvironmentObject var store: ToDoStore
     
+    var toDo: ToDo? = nil
+    
     @Environment(\.dismiss) var dismiss
     
     @State private var content: String = ""
@@ -19,8 +21,13 @@ struct ComposeView: View {
             VStack {
                 TextEditor(text: $content)
                     .padding()
+                    .onAppear {
+                        if let toDo = toDo {
+                            content = toDo.content
+                        }
+                    }
             }
-            .navigationTitle("New ToDo")
+            .navigationTitle(toDo != nil ? "메모 편집" : "새 메모")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -32,6 +39,11 @@ struct ComposeView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
+                        if let toDo = toDo {
+                            store.update(toDo: toDo, content: content)
+                        } else {
+                            store.insert(toDoText: content)
+                        }
                         store.insert(toDoText: content)
                         dismiss()
                     } label: {

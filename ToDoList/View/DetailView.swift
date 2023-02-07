@@ -12,6 +12,8 @@ struct DetailView: View {
     
     @EnvironmentObject var store: ToDoStore
     
+    @State private var showComposer = false
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -32,12 +34,26 @@ struct DetailView: View {
         }
         .navigationTitle("메모 보기")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .bottomBar) {
+                Button {
+                    showComposer = true
+                } label: {
+                    Image(systemName: "square.and.pencil")
+                }
+            }
+        }
+        .sheet(isPresented: $showComposer) {
+            ComposeView(toDo: toDo)
+        }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(toDo: ToDo(content: "Hello"))
-            .environmentObject(ToDoStore())
+        NavigationView {
+            DetailView(toDo: ToDo(content: "Hello"))
+                .environmentObject(ToDoStore())
+        }
     }
 }
