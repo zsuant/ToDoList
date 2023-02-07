@@ -11,6 +11,8 @@ struct MainListView: View {
     
     @EnvironmentObject var store: ToDoStore
     
+    @State private var showComposer: Bool = false
+    
     var body: some View {
         NavigationView {
             List(store.toDoList) { toDo in
@@ -18,6 +20,18 @@ struct MainListView: View {
             }
             .navigationTitle("ToDoList")
             .listStyle(.plain)
+            .toolbar {
+                Button {
+                    showComposer = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showComposer) {
+                ComposeView()
+            }
+                
+            
 
         }
        
