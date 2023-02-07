@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct MainListView: View {
+    
+    @EnvironmentObject var store: ToDoStore
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(store.toDoList) { toDo in
+                VStack(alignment: .leading) {
+                    Text(toDo.content)
+                        .font(.body)
+                        .lineLimit(1)
+                    Text(toDo.toDoDate, style: .date)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .navigationTitle("ToDoList")
+            .listStyle(.plain)
+
+        }
+       
     }
 }
 
 struct MainListView_Previews: PreviewProvider {
     static var previews: some View {
         MainListView()
+            .environmentObject(ToDoStore())
     }
 }
