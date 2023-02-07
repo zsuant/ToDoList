@@ -15,6 +15,7 @@
 		FD6CBA4E2991E7880038423F /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA4D2991E7880038423F /* MainListView.swift */; };
 		FD6CBA502991E7F20038423F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA4F2991E7F20038423F /* ToDo.swift */; };
 		FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA512991E8BE0038423F /* ToDoStore.swift */; };
+		FD6CBA552992568C0038423F /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CBA542992568C0038423F /* ToDoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FD6CBA4D2991E7880038423F /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		FD6CBA4F2991E7F20038423F /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		FD6CBA512991E8BE0038423F /* ToDoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoStore.swift; sourceTree = "<group>"; };
+		FD6CBA542992568C0038423F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		FD6CBA372991E7260038423F /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				FD6CBA53299256750038423F /* View */,
 				FD6CBA4C2991E76C0038423F /* CoreData */,
 				FD6CBA4B2991E7600038423F /* Memory */,
 				FD6CBA382991E7260038423F /* ToDoListApp.swift */,
@@ -93,6 +96,14 @@
 				FD6CBA432991E7280038423F /* ToDoList.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FD6CBA53299256750038423F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD6CBA542992568C0038423F /* ToDoCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			files = (
 				FD6CBA422991E7280038423F /* Persistence.swift in Sources */,
 				FD6CBA522991E8BE0038423F /* ToDoStore.swift in Sources */,
+				FD6CBA552992568C0038423F /* ToDoCell.swift in Sources */,
 				FD6CBA502991E7F20038423F /* ToDo.swift in Sources */,
 				FD6CBA4E2991E7880038423F /* MainListView.swift in Sources */,
 				FD6CBA392991E7260038423F /* ToDoListApp.swift in Sources */,

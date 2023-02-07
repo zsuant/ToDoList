@@ -14,14 +14,7 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.toDoList) { toDo in
-                VStack(alignment: .leading) {
-                    Text(toDo.content)
-                        .font(.body)
-                        .lineLimit(1)
-                    Text(toDo.toDoDate, style: .date)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
+                ToDoCell(toDo: toDo)
             }
             .navigationTitle("ToDoList")
             .listStyle(.plain)
@@ -37,3 +30,5 @@ struct MainListView_Previews: PreviewProvider {
             .environmentObject(ToDoStore())
     }
 }
+
+
